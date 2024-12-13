@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Calls Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>API Calls with Fetch and XHR</h1>
+    
+    <button id="fetchButton">Fetch Data with fetch()</button>
+    <button id="xhrButton">Fetch Data with XHR</button>
+    
+    <div id="dataDisplay"></div>
+
+    <form id="dataForm">
+        <input type="text" id="postTitle" placeholder="Post Title" required>
+        <input type="text" id="postBody" placeholder="Post Body" required>
+        <button type="submit">Send Data (POST)</button>
+    </form>
+
+    <form id="updateForm">
+        <input type="number" id="postId" placeholder="Post ID to Update" required>
+        <input type="text" id="updateTitle" placeholder="New Title" required>
+        <input type="text" id="updateBody" placeholder="New Body" required>
+        <button type="button" id="putButton">Update Data (PUT)</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
